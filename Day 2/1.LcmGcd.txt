@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class lcmgcd {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter First number: ");
+        int n1 = scanner.nextInt();
+        System.out.print("Enter Second number: ");
+        int n2 = scanner.nextInt();
+        int x = n1;
+        int y = n2;
+        int t, gcd, lcm;
+        while (n2 != 0) {
+            t = n2;
+            n2 = n1 % n2;
+            n1 = t;
+        }
+        gcd = n1;
+        lcm = (x * y) / gcd;
+        System.out.println("GCD of " + x + " and " + y + " = " + gcd);
+        System.out.println("LCM of " + x + " and " + y + " = " + lcm);
+        scanner.close();
+    }
+}
