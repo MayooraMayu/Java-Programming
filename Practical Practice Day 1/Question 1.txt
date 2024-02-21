@@ -1,0 +1,23 @@
+Source Code:
+public class Primitive_data{
+    public static  void main(String args[])
+    {
+        char a = 'M';
+        int i = 89;
+        byte b = 4;
+        short s = 56;
+        double d = 4.355;
+        float f = 4.7333f;
+        long l = 1211;
+        boolean booleanValue =true;
+        System.out.println("char: " + a);
+        System.out.println("integer: " + i);
+        System.out.println("byte: " + b);
+        System.out.println("short: " + s);
+        System.out.println("float: " + f);
+        System.out.println("double: " + d);
+        System.out.println("long: " + l);
+        System.out.println("boolean: " + booleanValue);
+    }
+}
+
